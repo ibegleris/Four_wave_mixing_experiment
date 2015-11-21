@@ -28,9 +28,8 @@ def over2(i, j, k, l):
 def sums(i, A):
     sum_full = 0
     for j in range(4):
-        if j==i:
-            break
-        sum_full += over1(i,j)*np.abs(A[j])**2
+        if j!=i:
+           sum_full += over1(i,j)*np.abs(A[j])**2
     return sum_full
 
 
